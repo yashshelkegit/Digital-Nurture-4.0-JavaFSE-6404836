@@ -1,2 +1,11 @@
 .DS_Store
 .idea/
+
+*.class
+*.log
+*.iml
+
+**/out/
+**/out/**
+**/build/
+**/target/

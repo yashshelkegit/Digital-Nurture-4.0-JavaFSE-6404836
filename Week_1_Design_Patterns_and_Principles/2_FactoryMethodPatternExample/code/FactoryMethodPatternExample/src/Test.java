@@ -1,15 +1,14 @@
 public class Test {
     public void run(){
-        DocumentFactory excelFactory = new DocumentFactoryManager().getFactory("excel");
-        IDocument excelDoc = excelFactory.createDocument();
+        DocumentFactoryManager manager = new DocumentFactoryManager();
+
+        IDocument excelDoc = manager.getFactory("excel").createDocument();
         excelDoc.create();
 
-        DocumentFactory pdfFactory = new DocumentFactoryManager().getFactory("pdf");
-        IDocument pdfDoc = pdfFactory.createDocument();
+        IDocument pdfDoc = manager.getFactory("pdf").createDocument();
         pdfDoc.create();
 
-        DocumentFactory wordFactory = new DocumentFactoryManager().getFactory("word");
-        IDocument wordDoc = wordFactory.createDocument();
+        IDocument wordDoc = manager.getFactory("excel").createDocument();
         wordDoc.create();
     }
 }

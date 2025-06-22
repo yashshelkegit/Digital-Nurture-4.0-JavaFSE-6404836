@@ -1,6 +1,4 @@
 public class Main {
-
-    // Recursive method to calculate future value
     public static double predict(double initialAmount, double rate, int years) {
         if (years == 0) {
             return initialAmount;

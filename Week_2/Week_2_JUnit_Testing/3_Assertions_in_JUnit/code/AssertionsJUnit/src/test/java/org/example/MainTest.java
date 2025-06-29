@@ -1,20 +1,23 @@
 package org.example;
 
-import junit.framework.TestCase;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class MainTest extends TestCase {
+import static org.junit.jupiter.api.Assertions.*;
+
+public class MainTest {
 
     @Test
     public void testSeven() {
         int result = Main.seven();
-        assertEquals("Should return 7", 9, result);
+        assertEquals(9, result, "Should return 9");
     }
+
     @Test
     public void testFunTrue() {
         boolean result = Main.funTrue();
-        assertEquals(true, result);
+        assertTrue(result);
     }
+
     @Test
     public void testAbc() {
         String result = Main.abc();

@@ -6,7 +6,7 @@ public class BookService {
 
     private BookRepository bookRepository;
 
-    public void setBookRepository(BookRepository bookRepository) {
+    public BookService(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
     }
 
